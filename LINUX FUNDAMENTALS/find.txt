@@ -1,0 +1,37 @@
+find — Search for files in a directory hierarchy
+
+DESCRIPTION
+The find command is one of the most powerful and flexible utilities in Linux. it is used to search for files and directories based on various criteria such as name, size, type, permissions, and modification time. Unlike 'locate', find searches the actual file system in real-time, ensuring the results are always up to date.
+
+COMMON FLAGS / CRITERIA
+-name  : Search for files by name (case-sensitive).
+-iname : Search for files by name (case-insensitive).
+-type  : Filter by file type (f for regular file, d for directory, l for symbolic link).
+-size  : Search by file size (+ for greater than, - for less than).
+-mtime : Search by modification time (in days).
+-perm  : Search based on file permissions.
+-user  : Find files belonging to a specific user.
+-exec  : Perform an action on the files found.
+
+PRACTICAL EXAMPLES
+
+1. Find a file by name in the current directory and subdirectories:
+   find . -name "filename.txt"
+
+2. Search for all directories in a specific path:
+   find /var/log -type d
+
+3. Find files larger than 100MB:
+   find / -size +100M
+
+4. Find files modified in the last 7 days:
+   find /home/user -mtime -7
+
+5. Find all .log files and delete them (use with caution):
+   find /tmp -name "*.log" -exec rm {} \;
+
+6. Search for files with specific 777 permissions:
+   find . -perm 777
+
+7. Find files belonging to a specific user:
+   find / -user root
