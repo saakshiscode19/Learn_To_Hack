@@ -1,0 +1,40 @@
+NAME
+       cat - concatenate files and print on the standard output
+
+SYNTAX
+       cat [OPTION]... [FILE]...
+
+DESCRIPTION
+       cat copies each file (‘-’ means standard input), or standard input if none are given, to standard output.
+
+
+IMPORTANT FLAGS
+        -A, --show-all           equivalent to -vET
+        -b, --number-nonblank    number nonempty output lines, overrides -n
+        -e                       equivalent to -vE
+        -E, --show-ends          display $ at end of each line
+        -n, --number             number all output lines
+        -s, --squeeze-blank      suppress repeated empty output lines
+        -t                       equivalent to -vT
+        -T, --show-tabs          display TAB characters as ^I
+        -u                       (ignored)
+        -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB
+        --version     output version information and exit
+ 
+USAGE
+       1.View a files content using "cat file.txt"
+              output:(content of file)
+       2.merging files together
+              cat file1.txt file2.txt > combined.txt
+       3.Append at the end of file
+              cat file1.txt >> file2.txt
+       4.Number all lines    
+              cat -n file.txt(display the content along with number of each line)
+       5.Read from standard input
+              cat (whatever we type is echoed back)
+
+
+
+Similar commands like cat are :- less , more                   
+
+

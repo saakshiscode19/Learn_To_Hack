@@ -1,0 +1,3 @@
+Name: Yadav Avnish
+College: Lokmanya Tilak College of Engineering
+Fun Fact/Story: I am learning Linux, GitHub, and CTFs through hands-on practice!

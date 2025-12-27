@@ -1,0 +1,24 @@
+"sudo" allows you to execute a command with administrative privilages.It would allows you to act as the administrator of the system even with logging in as one.
+every system has a timeout for executing sudo commands within that timeperiod, after that one has to again enter the system password for executing new set of sudo 
+commands. 
+
+
+Syntax : sudo command
+
+
+1. sudo -h
+This is for getting  general help information related to the sudo command like information about other flags, syntax to use in different commands.
+
+
+2. sudo -l
+Gives the list of all the commands you can execute with sudo
+
+3. sudo -v
+This helps in refreshing the sudo timeout , you won't need to enter the Username and  password  again and agin
+
+4. sudo -k
+This ends the sudo access time, the next the one would be required to enter the username and password to execute a command with sudo privelages
+
+5. sudo -e
+This allows to edit files using admin privilages, this is a safer way of editing files as this will create a copy of file to edit on and edit it there, after all the 
+edits the original  file will be replaced by the edited file.
