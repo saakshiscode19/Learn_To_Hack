@@ -1,0 +1,32 @@
+Command: sed
+
+Description:
+sed (Stream Editor) is a powerful text-processing utility used to perform basic text transformations on an input stream (file or standard input).
+It is commonly used in cybersecurity and CTFs for log analysis, payload modification, pattern replacement, and automation tasks.
+
+Useful Flags:
+
+-n
+Suppresses automatic printing of pattern space.
+Used when you want to explicitly control output using the 'p' command.
+
+-e
+Allows you to specify multiple editing commands in one sed execution.
+Useful for chaining multiple operations.
+
+-f
+Reads sed commands from a file instead of the command line.
+Helpful for complex or reusable transformations.
+
+-i
+Edits files in-place.
+Commonly used when modifying configuration files or scripts directly.
+
+-r
+Enables extended regular expressions.
+Simplifies regex patterns by removing the need for excessive escaping.
+
+Examples:
+sed 's/password/*******/g' file.txt
+sed -n '/admin/p' access.log
+sed -i 's/127.0.0.1/0.0.0.0/g' config.txt
