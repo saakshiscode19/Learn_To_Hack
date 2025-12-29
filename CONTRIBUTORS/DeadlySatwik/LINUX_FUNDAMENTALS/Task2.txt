@@ -1,0 +1,31 @@
+mkdir LtH_issue4
+- Created a new directory named 'LtH_issue4' for the task.
+
+cd LtH_issue4
+- Moved inside LtH_issue4 directory.
+
+touch/gedit Satwik_Santosh.txt
+- Created a text file with my name
+
+mv Satwik_Santosh.txt IIT2024084.txt
+- Renamed the file to IIT2024084
+
+cd ..
+- Stepped out to the parent directory
+
+rm -r LtH_issue4/
+- Deleted the complete directory.
+
+sudo useradd -m issue4_LtH
+- Created a new user named 'issue4_LtH'
+
+groups issue4_LtH
+- Checked which groups the new user currently belongs to/
+
+sudo usermod -aG sudo issue4_LtH
+- Added the new user to the 'sudo' group for admin privileges
+
+sudo passwd issue4_LtH
+- Set a password for the user.
+
+Scrnsht Link : https://drive.google.com/file/d/1OJFWkmZe4Zds2V48LHwcn8xWo55oniBA/view?usp=sharing
