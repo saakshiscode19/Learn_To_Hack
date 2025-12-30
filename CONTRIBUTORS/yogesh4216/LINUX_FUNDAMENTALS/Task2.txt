@@ -1,0 +1,32 @@
+mkdir my_directory
+# Creates a new directory named my_directory
+
+cd my_directory
+# Enters the newly created directory
+
+touch yogesh.txt
+# Creates a file named yogesh.txt
+
+mv yogesh.txt 123456.txt
+# Renames yogesh.txt to 123456.txt
+
+cd ..
+# Moves one directory back
+
+rm -r my_directory
+# Deletes the directory and its contents
+
+sudo adduser testuser
+# Creates a new user named testuser
+
+groups testuser
+# Displays the groups the user belongs to
+
+sudo usermod -aG sudo testuser
+# Adds the user to the sudo group
+
+groups testuser
+# Verifies updated group membership
+
+sudo passwd testuser
+# Sets a password for the new user
