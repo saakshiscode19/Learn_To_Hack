@@ -1,0 +1,35 @@
+Command: base64
+
+Description:
+The base64 command is used to encode and decode data using Base64 encoding.
+This is commonly used in CTFs for obfuscation, data transfer, and cryptography challenges.
+
+Usage:
+base64 [OPTION]... [FILE]
+
+Common Flags:
+
+- -d, --decode
+  Decodes Base64 encoded data back to its original form.
+
+- -w <number>
+  Wraps encoded lines after the specified number of characters.
+  Use -w 0 to disable line wrapping.
+
+- -i
+  Ignores non-alphabet characters while decoding.
+
+- --help
+  Displays help information about the command.
+
+- --version
+  Displays version information.
+
+CTF Use Cases:
+- Decode hidden messages
+- Encode payloads for safe transmission
+- Solve crypto and steganography challenges
+
+Example:
+base64 secret.txt
+base64 -d encoded.txt
