@@ -1,0 +1,35 @@
+file (identify real file type)
+
+Description:
+file identifies the actual type of a file by inspecting its contents
+(magic numbers), not the filename or extension.
+
+Usage:
+file [OPTIONS] <file>
+
+Important flags:
+
+-b, --brief
+Show only the file type (no filename).
+Example: file -b suspicious.bin
+
+-r, --recursive
+Analyze files inside directories recursively.
+Example: file -r uploads/
+
+--mime
+Show MIME type and encoding.
+Example: file --mime image.jpg
+
+--mime-type
+Show only MIME type.
+Example: file --mime-type script.sh
+
+-L, --dereference
+Follow symlinks and analyze the actual target file.
+Example: file -L link
+
+-z
+Look inside compressed files.
+Example: file -z archive.gz
+
