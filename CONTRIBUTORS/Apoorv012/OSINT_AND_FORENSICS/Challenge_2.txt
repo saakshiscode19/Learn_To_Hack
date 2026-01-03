@@ -1,0 +1,5 @@
+Flag: geek{EveryOne_Loves_Maggi}
+How:
+- I ran the strings command on the file, and then used grep "geek" to find the flag.
+Command: strings CICADA_IS_COMING.png | grep "geek"
+Drive Link: https://drive.google.com/file/d/1rRJ-Vca8QCUVvVt8A1Q8a8ikoqLxPAqx/view?usp=sharing
